@@ -5,7 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Test</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -20,35 +23,12 @@
                 height: 100vh;
                 margin: 0;
             }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
             .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
+            	padding-top: 30px;
             }
-
             .content {
-                text-align: center;
+            	margin: 50px 0 0 10px;
             }
-
-            .title {
-                font-size: 84px;
-            }
-
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
@@ -58,14 +38,10 @@
                 text-decoration: none;
                 text-transform: uppercase;
             }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div>
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -78,17 +54,90 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                <div id="nav">
+					<ul>
+						<li><a href="#"><b>CEO</b></a>
+							<ul class="submenu">
+								<li><a href="#">Chief 1</a>
+									<ul class="submenu">
+										<li><a href="#">Menager 1</a>
+											<ul class="submenu">
+												<li><a href="#">Leader 1</a>
+													<ul class="submenu">
+														<li><a href="#">Senior 1</a>
+															<ul class="submenu">
+																<li><a href="#">Worker 1</a></li>
+																<li><a href="#">Worker 2</a></li>
+																<li><a href="#">Worker 3</a></li>
+																<li><a href="#">Worker 4</a></li>
+																<li><a href="#">Worker 5</a></li>
+															</ul>
+														</li>		
+													</ul>
+												</li>						
+											</ul>
+										</li>
+										<li><a href="#">Menager 2</a>
+											<ul class="submenu">
+												<li><a href="#">Leader 2</a>
+													<ul class="submenu">
+														<li><a href="#">Senior 2</a>
+															<ul class="submenu">
+																<li><a href="#">Worker 1</a></li>
+																<li><a href="#">Worker 2</a></li>
+																<li><a href="#">Worker 3</a></li>
+																<li><a href="#">Worker 4</a></li>
+																<li><a href="#">Worker 5</a></li>
+															</ul>
+														</li>		
+													</ul>
+												</li>						
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="#">Chief 2</a>
+									<ul class="submenu">
+										<li><a href="#">Menager 1</a>
+											<ul class="submenu">
+												<li><a href="#">Leader 1</a>
+													<ul class="submenu">
+														<li><a href="#">Senior 1</a>
+															<ul class="submenu">
+																<li><a href="#">Worker 1</a></li>
+																<li><a href="#">Worker 2</a></li>
+																<li><a href="#">Worker 3</a></li>
+																<li><a href="#">Worker 4</a></li>
+																<li><a href="#">Worker 5</a></li>
+															</ul>
+														</li>		
+													</ul>
+												</li>						
+											</ul>
+										</li>
+										<li><a href="#">Menager 2</a>
+											<ul class="submenu">
+												<li><a href="#">Leader 2</a>
+													<ul class="submenu">
+														<li><a href="#">Senior 2</a>
+															<ul class="submenu">
+																<li><a href="#">Worker 1</a></li>
+																<li><a href="#">Worker 2</a></li>
+																<li><a href="#">Worker 3</a></li>
+																<li><a href="#">Worker 4</a></li>
+																<li><a href="#">Worker 5</a></li>
+															</ul>
+														</li>		
+													</ul>
+												</li>						
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
             </div>
         </div>
     </body>

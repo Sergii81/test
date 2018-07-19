@@ -1,0 +1,60 @@
+#nav {
+                height      :32px;
+                line-height :32px;
+                background  :#3B5998;
+                padding     :0 50px;
+                
+            }
+
+            #nav ul, #nav ul li {
+                margin      :0;
+                padding     :0;
+                list-style  :none;
+
+            }
+            #nav ul li {
+                float       :left;
+                display     :block;
+            }
+            #nav ul li a:link,
+            #nav ul li a:visited {
+                color           :#FFF;
+                font-size       :14px;
+                font-weight     :bold;
+                text-decoration :none;
+                padding         :0 20px 0 6px;
+                display         :block;
+            }
+            #nav ul li a:hover {
+                color           :#EBEFF7;
+            }
+            #nav ul li ul li {
+                float           :none;
+                display         :block;
+            }
+            #nav ul li ul li a:link,
+            #nav ul li ul li a:visited {
+                color           :#444;
+                font-size       :15px;
+                font-weight     :bold;
+                text-decoration :none;
+                padding         :0 10px;
+                clear           :both;
+                border-bottom   :solid 1px #DEDEDE;
+            }
+            #nav ul li ul li a:hover {
+                color           :#3B5998;
+                background      :#EBEFF7;
+            }
+            .submenu {
+                position    : absolute;
+                left        : 40px;
+                width       : 160px;
+                background  : #FFF;
+                padding     : 10px;
+                border      : solid 1px #2E4B88;
+                border-top  : none;
+                display     : none;
+                line-height : 26px;
+                z-index     : 1000;
+            }
