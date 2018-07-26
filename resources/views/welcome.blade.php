@@ -136,6 +136,7 @@
 								</li>
 							</ul>
 						</li>
+						<li><a href="#"><b>Show all workers</b></li>
 					</ul>
 				</div>
             </div>
