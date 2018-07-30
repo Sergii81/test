@@ -16,7 +16,7 @@ class CeosTableSeeder extends Seeder
         	['id' => 1,
             'name' => 'Serg',            
             'appointment' => 'CEO',
-            'employment_date' => '25.06.2000',
+            'employment_date' => '2000.06.25',
             'salary' => 10000,
             'avatar' => './imd/default.png',                
         	],
