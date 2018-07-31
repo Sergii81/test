@@ -56,9 +56,96 @@
             <div class="content">
                 <div id="nav">
 					<ul>
-						<li><a href="#"><b>CEO</b></a>
+						<li><a href="#"><b>@foreach($ceos as $ceo){{$ceo->name}} - {{$ceo->appointment}}@endforeach</b></a>
 							<ul class="submenu">
-								<li><a href="#">Chief 1</a>
+								@foreach($chiefs as $chief)
+								@switch ($chief->id)
+									@case(1)
+										{{$count}}
+										<li><a href="#">{{$chief->name}}</a>
+											<ul class="submenu">
+												@foreach($menagers1 as $menager)
+												<li><a href="#">{{$menager->name}}</a>
+													<ul class="submenu">
+														<li><a href="#">Leader 1</a>
+															<ul class="submenu">
+																<li><a href="#">Senior 1</a>
+																	<ul class="submenu">
+																		@foreach($workers1 as $worker)
+																		<li><a href="#">{{$worker->name}}</a></li>	
+																		@endforeach
+																	</ul>
+																</li>
+															</ul>
+														</li>						
+													</ul>
+												</li>
+												@endforeach
+												@foreach($menagers2 as $menager)
+												<li><a href="#">{{$menager->name}}</a>
+													<ul class="submenu">
+														<li><a href="#">Leader 2</a>
+															<ul class="submenu">
+																<li><a href="#">Senior 2</a>
+																	<ul class="submenu">
+																		<li><a href="#">Worker 1</a></li>
+																		<li><a href="#">Worker 2</a></li>
+																		<li><a href="#">Worker 3</a></li>
+																		<li><a href="#">Worker 4</a></li>
+																		<li><a href="#">Worker 5</a></li>
+																	</ul>
+																</li>		
+															</ul>
+														</li>						
+													</ul>
+												</li>
+												@endforeach
+											</ul>
+										</li>
+									@break
+								@endswitch
+								<li><a href="#">{{$chief->name}}</a>
+									<ul class="submenu">
+										@foreach($menagers1 as $menager)
+										<li><a href="#">{{$menager->name}}</a>
+											<ul class="submenu">
+												<li><a href="#">Leader 1</a>
+													<ul class="submenu">
+														<li><a href="#">Senior 1</a>
+															<ul class="submenu">
+																@foreach($workers1 as $worker)
+																<li><a href="#">{{$worker->name}}</a></li>	
+																@endforeach
+															</ul>
+														</li>
+													</ul>
+												</li>						
+											</ul>
+										</li>
+										@endforeach
+										@foreach($menagers2 as $menager)
+										<li><a href="#">{{$menager->name}}</a>
+											<ul class="submenu">
+												<li><a href="#">Leader 2</a>
+													<ul class="submenu">
+														<li><a href="#">Senior 2</a>
+															<ul class="submenu">
+																<li><a href="#">Worker 1</a></li>
+																<li><a href="#">Worker 2</a></li>
+																<li><a href="#">Worker 3</a></li>
+																<li><a href="#">Worker 4</a></li>
+																<li><a href="#">Worker 5</a></li>
+															</ul>
+														</li>		
+													</ul>
+												</li>						
+											</ul>
+										</li>
+										@endforeach
+									</ul>
+								</li>
+								@endforeach
+								<!--<li><a href="#">Chief 2</a>
 									<ul class="submenu">
 										<li><a href="#">Menager 1</a>
 											<ul class="submenu">
@@ -95,45 +182,7 @@
 											</ul>
 										</li>
 									</ul>
-								</li>
-								<li><a href="#">Chief 2</a>
-									<ul class="submenu">
-										<li><a href="#">Menager 1</a>
-											<ul class="submenu">
-												<li><a href="#">Leader 1</a>
-													<ul class="submenu">
-														<li><a href="#">Senior 1</a>
-															<ul class="submenu">
-																<li><a href="#">Worker 1</a></li>
-																<li><a href="#">Worker 2</a></li>
-																<li><a href="#">Worker 3</a></li>
-																<li><a href="#">Worker 4</a></li>
-																<li><a href="#">Worker 5</a></li>
-															</ul>
-														</li>		
-													</ul>
-												</li>						
-											</ul>
-										</li>
-										<li><a href="#">Menager 2</a>
-											<ul class="submenu">
-												<li><a href="#">Leader 2</a>
-													<ul class="submenu">
-														<li><a href="#">Senior 2</a>
-															<ul class="submenu">
-																<li><a href="#">Worker 1</a></li>
-																<li><a href="#">Worker 2</a></li>
-																<li><a href="#">Worker 3</a></li>
-																<li><a href="#">Worker 4</a></li>
-																<li><a href="#">Worker 5</a></li>
-															</ul>
-														</li>		
-													</ul>
-												</li>						
-											</ul>
-										</li>
-									</ul>
-								</li>
+								</li>-->
 							</ul>
 						</li>
 						<li><a href="#"><b>Show all workers</b></li>
