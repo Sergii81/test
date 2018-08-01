@@ -10,8 +10,8 @@ class Worker extends Model
 
     public $fillable = ['name', 'appointment', 'employment_date', 'salary', 'avatar', 'senior_id'];
 
-    public function seniors()
+    public function senior()
     {
-    	return $this->belongsTo('App/Senior');
+    	return $this->belongsTo('App\Senior');
     }
 }

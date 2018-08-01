@@ -10,7 +10,7 @@ class Ceo extends Model
 
     public $fillable = ['name', 'appointment', 'employment_date', 'salary', 'avatar'];
 
-    public function chiefs()
+    public function chief()
     {
     	return $this->hasMany('App\Chief'); // один СЕО имеет много подчиненных Chiefs
     }

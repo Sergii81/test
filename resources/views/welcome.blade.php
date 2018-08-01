@@ -58,11 +58,11 @@
 					<ul>
 						<li><a href="#"><b>@foreach($ceos as $ceo){{$ceo->name}} - {{$ceo->appointment}}@endforeach</b></a>
 							<ul class="submenu">
-								@foreach($chiefs as $chief)
-								@switch ($chief->id)
-									@case(1)
-										{{$count}}
-										<li><a href="#">{{$chief->name}}</a>
+										@foreach($m as $a)
+										{{$a->ceo->name}}
+										@endforeach
+										
+										<li><a href="#">{{$chief}}</a>
 											<ul class="submenu">
 												@foreach($menagers1 as $menager)
 												<li><a href="#">{{$menager->name}}</a>
@@ -99,12 +99,11 @@
 														</li>						
 													</ul>
 												</li>
-												@endforeach
+												
 											</ul>
 										</li>
-									@break
-								@endswitch
-								<li><a href="#">{{$chief->name}}</a>
+									
+								<li><a href="#">{{$chief}}</a>
 									<ul class="submenu">
 										@foreach($menagers1 as $menager)
 										<li><a href="#">{{$menager->name}}</a>

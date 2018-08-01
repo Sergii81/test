@@ -10,13 +10,13 @@ class Menager extends Model
 
     public $fillable = ['name', 'appointment', 'employment_date', 'salary', 'avatar', 'chief_id'];
 
-    public function leaders()
+    public function leader()
     {
     	return $this->hasMany('App\Leader'); // один Menager имеет много подчиненных Leaders
     }
 
-    public function chiefs()
+    public function chief()
     {
-    	return $this->belongsTo('App/Chief');
+    	return $this->belongsTo('App\Chief');
     }
 }

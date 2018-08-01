@@ -10,13 +10,13 @@ class Leader extends Model
 
     public $fillable = ['name', 'appointment', 'employment_date', 'salary', 'avatar', 'menager_id'];
 
-    public function seniors()
+    public function senior()
     {
     	return $this->hasMany('App\Senior'); // один Leader имеет много подчиненных Seniors
     }
 
-    public function menagers()
+    public function menager()
     {
-    	return $this->belongsTo('App/Menager');
+    	return $this->belongsTo('App\Menager');
     }
 }
